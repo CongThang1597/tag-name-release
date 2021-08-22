@@ -1,0 +1,15 @@
+name: "Get Release Tag Name"
+description: "Automatically get release tag name"
+author: "CongThang1597"
+branding:
+  color: "red"
+  icon: "tag"
+
+inputs:
+  GITHUB_TOKEN:
+    description: "Github secrets token"
+    required: true
+
+runs:
+  using: "node12"
+  main: "dist/index.js"
